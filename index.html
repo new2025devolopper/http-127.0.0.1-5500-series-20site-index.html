@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türk Dizileri - Turkish Series</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        nav {
+            background-color: red;
+            padding:20px 50px ;
+        }
+        button  {
+            border-color: red;
+            background-color: rgb(250, 7, 7);
+            padding: 8px 30px;
+            border-radius: 50px;
+            
+        }
+    </style>
+</head>
+<body class="bg-background font-sans">
+    <header class="bg-primary py-6 px-4 md:px-8 lg:px-16">
+        <nav class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary-foreground mb-4 md:mb-0">Türk Dizileri</h1>
+            <div class="flex flex-wrap gap-4 text-primary-foreground">
+                <a href="#" class="hover:text-secondary transition-colors">Popular Series</a>
+                <a href="#" class="hover:text-secondary transition-colors">New Releases</a>
+                <a href="#" class="hover:text-secondary transition-colors">Genres</a>
+                <a href="#" class="hover:text-secondary transition-colors">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-12">
+        <div class="flex justify-between items-center mb-8">
+            <div class="relative w-64">
+                <input type="search" placeholder="Search series..." class="w-full px-4 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+            </div>
+            <div class="flex gap-4">
+                <select class="px-4 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    <option value="">All Genres</option>
+                    <option value="drama">Drama</option>
+                    <option value="romance">Romance</option>
+                    <option value="historical">Historical</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article class="bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1578674473215-9e07ee2e577d" alt="Series poster" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-heading">Kara Sevda</h3>
+                        <span class="text-chart-1">★★★★★</span>
+                    </div>
+                    <span class="text-accent text-sm">Romance, Drama</span>
+                    <p class="text-foreground mt-3">An epic love story between two people from different worlds.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-accent">2015-2017</span>
+                        <button class="text-primary hover:text-primary-foreground hover:bg-primary px-4 py-2 rounded-lg transition-colors">Watch Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1584824486509-112e4181ff6b" alt="Series poster" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-heading">Diriliş: Ertuğrul</h3>
+                        <span class="text-chart-1">★★★★★</span>
+                    </div>
+                    <span class="text-accent text-sm">Historical, Action</span>
+                    <p class="text-foreground mt-3">The heroic story of Ertuğrul Ghazi, father of Ottoman Empire.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-accent">2014-2019</span>
+                        <button class="text-primary hover:text-primary-foreground hover:bg-primary px-4 py-2 rounded-lg transition-colors">Watch Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1578675725569-e4f459f61e21" alt="Series poster" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-heading">Çukur</h3>
+                        <span class="text-chart-1">★★★★☆</span>
+                    </div>
+                    <span class="text-accent text-sm">Crime, Drama</span>
+                    <p class="text-foreground mt-3">A thrilling story of family, power, and loyalty in Istanbul.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-accent">2017-2021</span>
+                        <button class="text-primary hover:text-primary-foreground hover:bg-primary px-4 py-2 rounded-lg transition-colors"> Watch Now</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-secondary mt-12 py-8 px-4 md:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-secondary-foreground">&copy; 2024 Türk Dizileri. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
